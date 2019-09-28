@@ -1,0 +1,31 @@
+@import "./styles.scss";
+
+.wrapper {
+  display: grid;
+  grid-column: auto/span 12;
+}
+
+div[size="2"] {
+  grid-column: auto/ span 2;
+}
+div[size="3"] {
+  grid-column: auto/ span 3;
+}
+div[size="4"] {
+  grid-column: auto/ span 4;
+}
+div[size="6"] {
+  grid-column: auto/ span 6;
+}
+div[size="12"] {
+  grid-column: auto/ span 12;
+}
+div[border] img {
+  border: 1px solid #dedede;
+}
+
+figcaption {
+  font-size: 1.1rem;
+  margin-top: 8px;
+  font-family: var(--sans-serif);
+}

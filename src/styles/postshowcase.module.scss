@@ -1,0 +1,18 @@
+@import "./styles.scss";
+
+
+.heading {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  grid-column: auto/span 12;
+  padding-top: 6rem;
+}
+
+.link {
+  font-family: var(--sans-serif);
+  font-size: 1.667rem;
+  text-align: right;
+  box-sizing: border-box;
+  margin-top: 42px;
+}

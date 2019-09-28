@@ -1,0 +1,33 @@
+@import "./styles.scss";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  grid-column: auto/span 12;
+  margin: 0;
+  padding: 4rem 0;
+  @include medium {
+    grid-template-columns: 1fr;
+    width: 70vw;
+  }
+  @include small {
+    grid-template-columns: 1fr;
+    width: 70vw;
+  }
+}
+
+.infoWrapper{
+  grid-column: auto/span 1;
+  h5 {
+    font-size: 1.1rem;
+    font-family: var(--sans-serif);
+    font-weight: 500;
+    margin-bottom: .667rem;
+    text-transform: uppercase;
+  }
+  p {
+    // font-size: 1.33rem;
+    font-weight: 500;
+  }
+}

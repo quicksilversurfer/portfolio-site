@@ -1,0 +1,39 @@
+@import "./styles.scss";
+
+.wrapper {
+  display: grid;
+  grid-column: auto/span 12;
+  padding: 4rem 0;
+}
+blockquote {
+  font-size: 2.986rem;
+  font-weight: bold;
+  font-style: 700;
+  margin:0;
+  margin-top: 3rem;
+  position: relative;
+  line-height: 1.37;
+  padding-left: 0;
+  margin-bottom: 3rem;
+}
+
+blockquote::before{
+  font-weight: bold;
+  font-size:200px;
+  content: "\201C";
+  line-height: 0px;
+  position: absolute;
+  top: -.4rem;
+  opacity: .1;
+}
+
+blockquote::after{
+  font-weight: bold;
+  font-size: 300px;
+  content: "\201D";
+  line-height: 0px;
+  position: absolute;
+  bottom: -4.4rem;
+  right: 0;
+  opacity: .1;
+}

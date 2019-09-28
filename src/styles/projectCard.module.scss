@@ -1,0 +1,54 @@
+@import "./styles.scss";
+
+.card {
+  display: block;
+  grid-column: auto/span 6;
+  padding: 2rem 0;
+
+  filter: grayscale(10%);
+  -webkit-transition: all 0.35s;
+
+  @include medium {
+    grid-column: auto/span 12;
+  }
+
+  @include small {
+    grid-column: auto/span 12;
+  }
+}
+.card:hover{
+  filter: grayscale(0%);
+}
+
+
+.cover {
+  height: 420px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  @include small {
+    height: fit-content;
+  }
+}
+.card:hover .cover {
+  transform: scale3d(1.005,1.005,1);
+}
+.card:active .cover{
+  transform: scale3d(.98,.98,1);
+}
+
+.title {
+  font-family: var(--sans-serif);
+  font-size: 1.777rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.desc {
+  font-family: var(--sans-serif);
+  font-weight: 500;
+  font-size: 1.333rem;
+  line-height: 1.37;
+  letter-spacing: 0.04rem;
+}

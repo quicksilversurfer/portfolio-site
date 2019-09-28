@@ -1,0 +1,14 @@
+@import "./styles.scss";
+
+.wrapper {
+  display: grid;
+  grid-column: auto/span 9;
+}
+
+.title {
+  font-weight: bold;
+  font-style: normal;
+}
+h3:empty {
+  display: none;
+}

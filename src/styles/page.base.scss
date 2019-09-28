@@ -1,0 +1,128 @@
+html {
+  background-color: var(--background-color);
+  font-size: 12px;
+}
+
+body {
+  font: 100%/1.625 var(--serif);
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'calt', 'liga', 'onum', 'pnum';
+  text-rendering: optimizeLegibility;
+
+  position: relative;
+
+  overflow-x: hidden;
+
+  // max-width: var(--outer-rim);
+  margin: 0 auto;
+  padding: 0;
+
+  color: var(--text-color);
+
+  // @include large {
+  //   // font-size: 130%;
+  // }
+  // @include medium {
+  //   // font-size: 110%;
+  // }
+  // @include small {
+  //   // font-size: 120%;
+  // }
+}
+
+
+.frame {
+  border: 1.5rem solid var(--primary-color);
+  height: auto;
+  max-width: 100%;
+  background-color: var(--background-color);
+
+  @include medium {
+    border: 1.25rem solid #2c2c2c;
+  }
+
+  @include small {
+    border: 1rem solid #2c2c2c;
+  }
+
+}
+
+.wrapper {
+  width: 100%;
+  // margin: 1rem 0;
+}
+
+.wrapper.border {
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 4rem 0;
+
+  @include small {
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+  }
+}
+
+.grid-wrapper {
+  display: grid;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 4rem;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2.333rem;
+
+  @include small {
+    display: block;
+    padding: 0 2rem;
+  }
+}
+
+
+// Spans
+.span-1 {
+  grid-column: auto/span 1;
+}
+.span-2 {
+  grid-column: auto/span 2;
+}
+.span-3 {
+  grid-column: auto/span 3;
+}
+.span-4 {
+  grid-column: auto/span 4;
+}
+.span-6 {
+  grid-column: auto/span 6;
+}
+.span-8 {
+  grid-column: auto/span 8;
+}
+.span-12 {
+  grid-column: auto/span 12;
+}
+
+// Iframe Styles
+iframe {
+  margin: 0;
+  margin-top: -3rem;
+}
+
+// Custom Scroll Bar
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: var(--secondary-color);
+}
