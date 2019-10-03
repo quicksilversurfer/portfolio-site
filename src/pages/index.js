@@ -6,14 +6,16 @@ import Frame from '../components/frame'
 import Intro from '../components/intro'
 import Showcase from '../components/showcase'
 import ProjectCard from '../components/projectCard'
+import MainNav from '../components/mainNav'
 
 import { graphql } from "gatsby"
 
 const IndexPage = (props) => (
   <Frame>
+    <MainNav></MainNav>
     <Intro
       title="Hello, I'm Prateek" 
-      description="I am an Interaction designer at Siemens Healthcare, where I design and build medical device interfaces."
+      description="I am an Interaction Designer at Siemens Healthcare, where I help design and build medical device interfaces."
       border="true"
       cover="true"
     ></Intro>
@@ -48,7 +50,7 @@ const IndexPage = (props) => (
       ></ProjectCard>
     </Showcase>
 
-    <Showcase intro="Web development has been a valuable skill for my design process, it gives me perspective, and helps me appreciate the engineering side of things." border>
+    <Showcase intro="Web development helped me get into design, and it has been a valuable skill for my design process, it gives me perspective, and helps me appreciate the engineering side of things." border>
       <ProjectCard
         link="/concept-nation/"
         projectCover={props.data.conceptnation.childImageSharp.fluid}
@@ -63,11 +65,9 @@ const IndexPage = (props) => (
       ></ProjectCard>
     </Showcase>
 
-    <Intro
-      description="Design is a combination of problem solving and expression."
-    >
-      <p>Of function and form. Of logic and feeling. I believe solutions for people are built through empathy and understanding of their needs and contexts. I enjoy this journey of discovery and collaboration that helps create these solutions, ultimately trying to make someone's life simpler, easier and more delightful. I'm learning from it both professionally and personally.</p>
-      <p>Thanks for visiting! 🍻</p>
+    <Intro description="Design is a combination of problem solving and expression.">
+      <p>Of function and form, of logic and feeling. I believe solutions for people are built through empathy and understanding of their needs and contexts. I enjoy this journey of discovery and collaboration that helps create these solutions, ultimately trying to make someone's life simpler, easier and more delightful. I'm learning from it both professionally and personally.</p>
+      <p>Thanks for visiting! <span role="img" class="big" aria-label="cheers">🍻</span> </p>
     </Intro>
 
   </Frame>
@@ -78,14 +78,14 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query  {
-    shui: file(relativePath: { eq: "assets/images/shui-cover.jpg" }) {
+    shui: file(relativePath: { eq: "assets/images/shui-cover.png" }) {
       childImageSharp {
         fluid(maxWidth: 1226) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    ultrasound: file(relativePath: { eq: "assets/images/ultrasound.jpg" }) {
+    ultrasound: file(relativePath: { eq: "assets/images/ultrasound.png" }) {
         childImageSharp {
           fluid(maxWidth: 1226) {
             ...GatsbyImageSharpFluid

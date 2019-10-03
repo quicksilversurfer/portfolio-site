@@ -40,7 +40,7 @@ const FractalInk = (props) => (
 
   <PostUnit title="Reflections" border="true">
     <p>Developing a big platform like eezyrent definitely helped improve my front end skills and gave me a deeper understanding of the development process. The importance of identifying the core components and structuring the code to enable reusability is essential in creating a light and maintenable code base.</p>
-    <p>It was a lot of fun building, seeing the project slowly take shape and I tried to contribute by trying out and including some motion and animations in the interactions. Something that the designers were defintely pleased with was my dedication to stay as close as possible to the original mockups.</p>
+    <p>It was a lot of fun building the website from the ground up and seeing the project slowly take shape. I contributed to the experience by proposing and including some motion and animations in the interactions. My dedication to stay as close as possible to the integrity of the visual design was one thing that noticed and appreciated by my design colleagues.</p>
   </PostUnit>
 
   <PostShowcase>
@@ -83,14 +83,14 @@ query  {
         }
       }
     }
-  shui: file(relativePath: { eq: "assets/images/shui-cover.jpg" }) {
+  shui: file(relativePath: { eq: "assets/images/shui-cover.png" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid
         }
         }
     }
-  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.jpg" }) {
+  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.png" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid

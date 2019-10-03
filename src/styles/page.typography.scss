@@ -56,7 +56,7 @@ h3,
   font-weight: normal;
   line-height: 1.37;
 
-  margin: 2.33rem 0 .67rem 0;
+  margin: 2.33rem 0 1.67rem 0;
 
   // letter-spacing: -0.02em;
 
@@ -187,4 +187,11 @@ p {
 ol li {
   font-size: 1.728rem;
   font-weight: 400;
+}
+
+span.big {
+  font-size: 4rem;
+  position: absolute;
+    margin-top: -24px;
+    padding: 0 8px;
 }

@@ -35,7 +35,7 @@ const MapIt = (props) => (
   <Blockquote>What needs do people have on the move and, how do they behave in the context of tranistory spaces and transportation systems.</Blockquote>
 
   <PostUnit title="Context">
-    <p>What are transitory spaces? <a href="https://en.wikipedia.org/wiki/Marc_Aug%C3%A9" target="_blank" rel="noopener noreferrer" >Marc Augé</a> offers some insights about these environments and refers to them as "non-places", a neologism coined in his work with the same title.</p>
+    <p>What are transitory spaces? <a href="https://en.wikipedia.org/wiki/Marc_Aug%C3%A9" target="_blank" rel="noopener noreferrer">Marc Augé</a> offers some insights about these environments and refers to them as "non-places", a neologism coined in his work with the same title.</p>
     <p>He defines them as spaces of transcience where the human beings remain anonymous and that do not hold enough significance to be regarded as "places".</p>
     <p>He brings up the example of a passenger at the airport waiting in the lounge, there are thousands like him there but they are not related. He is only an element of the space governed by the rules of the environment that he is in. The space of non-place creates a neither singular identity nor relations, only solitude, and similitude.</p>
   </PostUnit>
@@ -46,10 +46,10 @@ const MapIt = (props) => (
   </PostUnit>
 
   <Content>
-    <ImageCont size="4" src={props.data.personas.childImageSharp.fluid} caption="Personas (Illustration by Hadar Geva)"></ImageCont>
+    <ImageCont size="4" src={props.data.personas.childImageSharp.fluid} caption="Personas (Illustration by Hadar Geva"></ImageCont>
   </Content>
  
-  <PostUnit title="">
+  <PostUnit>
     <p><b>Federica,</b> a freelancer who uses the transit system to go to meetings during the day at off-peak hours.</p>
     <p><b>Gianluigi,</b> a businessman and parent who uses the transit system to take his kids to school and get to work.</p>
     <p><b>Emilio,</b> a geek and young professional who uses the transit system at peak hours but has more free time and less stress.</p>
@@ -62,22 +62,22 @@ const MapIt = (props) => (
 
   <PostUnit title="Synthesis">
     <p>We derived some key insights from our research which we used as a guide during our ideation phase.</p>
-    <p><b>Most of the peopple, </b>were taking their daily commute from one particular station to another and almost <b>never changed or modified their traveling route.</b></p>
+    <p><b>Most people </b>were taking their daily commute from one particular station to another and almost <b>never changed or modified their traveling route.</b></p>
     <p><b>People expect any digital service to be 'smart', </b>one step ahead of their needs, helping them make their lives more efficient.</p>
     <p>Lastly, <b>commuters hoped that new services can help them discover relevant products</b> and not bombard them with advertising.</p>
     <p>As we discussed our research and insights with our course leaders, a comment in one of our discussions made a lasting impression on me.</p>
   </PostUnit>
 
   <Blockquote>
-    Commuters pass through parts of a city without being aware of what opportunities and experiences they have to offer. What if we could make these opportunities known.
+    Commuters pass through parts of a city without being aware of what opportunities and experiences they have to offer. What if we could make these opportunities known?
   </Blockquote>
 
   <PostUnit>
-    <p>I had also observed during our contextual inquiries that commuters often seemed bored, or occupied with activities they needed to fill their time with. There was certainly an opportunity to make better use of this time, and more importantly to make better use of the route besides getting from point A to B.</p>
+    <p>I had also observed during our contextual inquiries that commuters often seemed bored, or occupied with activities they needed to fill their time with. There was certainly an opportunity to make better use of this time, and more importantly to make better use of their routes besides getting from point A to B.</p>
   </PostUnit>
 
   <PostUnit title="Concept">
-    <p>A service which helps the user navigate his/her environment more contextually rather than just taking them from point A to B. It does this by gathering information about the users routines, and preferences gathered from other social platforms or direct inputs from the user.</p> 
+    <p>We envision Map.it as a service which helps the user navigate their environment more contextually rather than just helping them get from point A to B. It does this by gathering information about a person's routines, and preferences gathered from other social platforms or as direct inputs from them.</p> 
   </PostUnit>
 
   <Content>
@@ -291,14 +291,14 @@ query  {
         }
         }
     }
-  shui: file(relativePath: { eq: "assets/images/shui-cover.jpg" }) {
+  shui: file(relativePath: { eq: "assets/images/shui-cover.png" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid
         }
         }
     }
-  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.jpg" }) {
+  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.png" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid

@@ -353,14 +353,14 @@ query  {
         }
         }
     }
-  shui: file(relativePath: { eq: "assets/images/shui-cover.jpg" }) {
+  shui: file(relativePath: { eq: "assets/images/shui-cover.png" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid
         }
         }
     }
-  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.jpg" }) {
+  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.png" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid
