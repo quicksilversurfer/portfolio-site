@@ -1,5 +1,7 @@
 import React from 'react'
 
+import "../styles/styles.scss"
+
 import Frame from '../components/frame'
 import Intro from '../components/intro'
 import Content from '../components/content'
@@ -9,12 +11,14 @@ import Blockquote from '../components/blockquote'
 import ImageCont from '../components/ImageCont'
 import PostShowcase from '../components/postShowcase'
 import ProjectCard from '../components/projectCard'
+import Header from '../components/header'
 
 import { graphql } from "gatsby"
 
 const MapIt = (props) => (
 
 <Frame>
+  <Header back></Header>
   <Intro 
   title="Map.it" 
   description="A contextual navigation platform that helps you get things done and discover new experiences in your environment."
@@ -24,7 +28,7 @@ const MapIt = (props) => (
 
   <PostInfo
     context="Domus Academy / Feb. 2014 / 4 Weeks / Experience Design"
-    collaborators="Rana Mansour, Tiago Boaventura, Me"
+    collaborators="Rana Mansour, Tiago Boaventura"
     contribution="Research, Interaction Design, UI Design"
   ></PostInfo>
 
@@ -32,7 +36,7 @@ const MapIt = (props) => (
     <p>Map.it is a concept part of a design brief called "Buy Mobile", that our Interaction Design batch tackled at Domus for the "Experience Design" course.</p>
   </PostUnit>
 
-  <Blockquote>What needs do people have on the move and, how do they behave in the context of tranistory spaces and transportation systems.</Blockquote>
+  <Blockquote>What needs do people have on the move and, how do they behave in the context of tranistory spaces and transportation systems?</Blockquote>
 
   <PostUnit title="Context">
     <p>What are transitory spaces? <a href="https://en.wikipedia.org/wiki/Marc_Aug%C3%A9" target="_blank" rel="noopener noreferrer">Marc Augé</a> offers some insights about these environments and refers to them as "non-places", a neologism coined in his work with the same title.</p>
@@ -44,10 +48,12 @@ const MapIt = (props) => (
     <p>We conducted contextual inquiries in Milano's transit system - metro stations and tram stops. Our goal was to understand a commuters needs, behaviors and also to capture what interactions and businesses these spaces were composed of.</p>
     <p>We developed three personas and tried to map their behaviors on activity maps that we created based on our contextual inquiries. These helped us in our progress to generate concepts and also analyze their potential effectiveness.</p>
   </PostUnit>
+  <br/>
 
   <Content>
-    <ImageCont size="4" src={props.data.personas.childImageSharp.fluid} caption="Personas (Illustration by Hadar Geva"></ImageCont>
+    <ImageCont size="4" src={props.data.personas.childImageSharp.fluid} caption="Personas (Illustrations by Hadar Geva"></ImageCont>
   </Content>
+  <br/>
  
   <PostUnit>
     <p><b>Federica,</b> a freelancer who uses the transit system to go to meetings during the day at off-peak hours.</p>
@@ -57,14 +63,22 @@ const MapIt = (props) => (
 
   <Content>
     <ImageCont size="6" src={props.data.map_1.childImageSharp.fluid} caption="Visualizing activities of commuters in Milan's metro stations" border="true"></ImageCont>
-    <ImageCont size="6" src={props.data.map_2.childImageSharp.fluid} caption="Person behaviors" border="true"></ImageCont>
+    <ImageCont size="6" src={props.data.map_2.childImageSharp.fluid} caption="Persona behaviors" border="true"></ImageCont>
   </Content>
 
   <PostUnit title="Synthesis">
     <p>We derived some key insights from our research which we used as a guide during our ideation phase.</p>
-    <p><b>Most people </b>were taking their daily commute from one particular station to another and almost <b>never changed or modified their traveling route.</b></p>
-    <p><b>People expect any digital service to be 'smart', </b>one step ahead of their needs, helping them make their lives more efficient.</p>
-    <p>Lastly, <b>commuters hoped that new services can help them discover relevant products</b> and not bombard them with advertising.</p>
+    <ul>
+      <li>
+        <p>Most people were taking their daily commute from one particular station to another and almost never changed or modified their traveling route.</p>
+      </li>
+      <li>
+        <p>People expect any digital service to be 'smart', one step ahead of their needs, helping them make their lives more efficient.</p>
+      </li>
+      <li>
+        <p>Lastly, commuters hoped that new services can help them discover relevant products and not bombard them with advertising.</p>
+      </li>
+    </ul>
     <p>As we discussed our research and insights with our course leaders, a comment in one of our discussions made a lasting impression on me.</p>
   </PostUnit>
 
@@ -81,16 +95,7 @@ const MapIt = (props) => (
   </PostUnit>
 
   <Content>
-    <ImageCont size="12" src={props.data.feeesh.childImageSharp.fluid} caption="Concept cover image (Illustration by Hadar Geva)" border="true"></ImageCont>
-  </Content>
-
-  <PostUnit>
-    <p>When a user signs up for Map.it, the application integrates with existing social media accounts and automatically creates a wish list. The user may categorize and rank these items based on importance, or add new items.</p>
-    <p>As the user moves about, Map.it learns about the user's commute and important locations. Using this data the system can recommend new routes along which the user may be able to discover items on their wish list or get tasks done. The user can also save, share and rank the suggested routes.</p>
-  </PostUnit>
-
-  <Content>
-    <ImageCont size="12" src={props.data.workflow.childImageSharp.fluid} caption="Map.it User Flow"></ImageCont>
+    <ImageCont size="12" src={props.data.feeesh.childImageSharp.fluid} caption="Concept cover image (Illustrations by Hadar Geva)" border="true"></ImageCont>
   </Content>
 
   <Content>
@@ -100,12 +105,16 @@ const MapIt = (props) => (
 
   <Content>
     <ImageCont size="6" src={props.data.mapit_23.childImageSharp.fluid}></ImageCont>
-    <p class="span-6">When a user signs up for Map.it, the application integrates with existing social media accounts and automatically creates a wish list. The user may categorize and rank these items based on importance, or add new items.</p>
+    <p class="span-6">As the user moves about, Map.it learns about the user's commute and important locations. Using this data the system can recommend new routes along which the user may be able to discover items on their wish list or get tasks done.</p>
   </Content>
 
   <Content>
-    <p  class="span-6">When a user signs up for Map.it, the application integrates with existing social media accounts and automatically creates a wish list. The user may categorize and rank these items based on importance, or add new items.</p>
+    <p  class="span-6">Finally, if the user finds value in the route suggested, they can save it for future use. </p>
     <ImageCont size="6" src={props.data.mapit_33.childImageSharp.fluid}></ImageCont>
+  </Content>
+
+  <Content>
+    <ImageCont size="12" src={props.data.workflow.childImageSharp.fluid} caption="Map.it User Flow"></ImageCont>
   </Content>
 
   <PostUnit title="Explorations">
@@ -128,22 +137,22 @@ const MapIt = (props) => (
   </Content>
 
   <PostUnit title="Conclusion" border="true">
-    <p>As a platform, Map.it captures a person's needs and lifestyle into a single location and represents these interests onto their local environment. Rather than supporting a person in finding something, Map.it tries to intelligently suggest. Optimizing routes for people, helping them become more productive, effecient and aware of their surroundings and the possibilities that their cities offer.</p>
-    <p>Customers get appropriate solutions, optimized in a way that fits their schedule. Businesses have a chance to target a primed and distributed audience with a higher success rate for conversion. And for cities, a place to showcase it's rich history, culture and the interests of it's residents.</p>
+    <p>As a platform, Map.it attempts to capture a person's needs and lifestyle in one place and represents these interests on top their local environment. Rather than supporting a person in simply finding something, Map.it tries to intelligently suggest. Optimizing routes for people, helping them become more productive, efficient and aware of their surroundings and the possibilities that their cities offer.</p>
+    <p>Users get appropriate solutions, optimized in a way that fits their schedule. Businesses have a chance to target a primed and distributed audience with a higher success rate for conversion. And for cities, a place to showcase it's rich history, culture and the interests of it's residents.</p>
   </PostUnit>
 
   <PostShowcase>
     <ProjectCard
-      link="/shui/"
-      projectCover={props.data.shui.childImageSharp.fluid}
-      projectTitle="Shui"
-      projectDesc="Developing design systems for increased internal productivity and user interface consistency."
+      link="/draw-me-a-story/"
+      projectCover={props.data.noldor.childImageSharp.fluid}
+      projectTitle="Draw me a story"
+      projectDesc="Interactive storytelling experience for children."
     ></ProjectCard>      
     <ProjectCard
       link="/ultrasound/"
       projectCover={props.data.ultrasound.childImageSharp.fluid}
       projectTitle="Ultrasound"
-      projectDesc="Developing design systems for increased internal productivity and user interface consistency."
+      projectDesc="End to end design execution for a complex medical device."
     ></ProjectCard>
   </PostShowcase>
 
@@ -291,7 +300,7 @@ query  {
         }
         }
     }
-  shui: file(relativePath: { eq: "assets/images/shui-cover.png" }) {
+  noldor: file(relativePath: { eq: "assets/images/noldor_cover.jpg" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid

@@ -6,13 +6,14 @@ import Frame from '../components/frame'
 import Intro from '../components/intro'
 import Showcase from '../components/showcase'
 import ProjectCard from '../components/projectCard'
-import MainNav from '../components/mainNav'
+// import MainNav from '../components/mainNav'
+import Header from '../components/header'
 
 import { graphql } from "gatsby"
 
 const IndexPage = (props) => (
   <Frame>
-    <MainNav></MainNav>
+    <Header></Header>
     <Intro
       title="Hello, I'm Prateek" 
       description="I am an Interaction Designer at Siemens Healthcare, where I help design and build medical device interfaces."
@@ -31,11 +32,11 @@ const IndexPage = (props) => (
         link="/ultrasound/"
         projectCover={props.data.ultrasound.childImageSharp.fluid}
         projectTitle="Ultrasound"
-        projectDesc="End to end design execution for an Ultrasound system."
+        projectDesc="End to end design execution for a complex medical device."
       ></ProjectCard>
     </Showcase>
 
-    <Showcase intro="Domus Academy was my first formal introduction to design thinking, where I had the chance to create innovative yet pragmatic solutions to broad and challenging design briefs." border>
+    <Showcase intro="Domus Academy was my first formal introduction to design thinking, where I had the chance to create innovative and pragmatic solutions to broad and challenging design briefs." border>
       <ProjectCard
         link="/draw-me-a-story/"
         projectCover={props.data.noldor.childImageSharp.fluid}
@@ -50,7 +51,7 @@ const IndexPage = (props) => (
       ></ProjectCard>
     </Showcase>
 
-    <Showcase intro="Web development helped me get into design, and it has been a valuable skill for my design process, it gives me perspective, and helps me appreciate the engineering side of things." border>
+    <Showcase intro="Web development helped me get into design, and it has been an invaluable skill for my design process, giving me perspective and helping me appreciate the technical details of things." border>
       <ProjectCard
         link="/concept-nation/"
         projectCover={props.data.conceptnation.childImageSharp.fluid}
@@ -66,7 +67,7 @@ const IndexPage = (props) => (
     </Showcase>
 
     <Intro description="Design is a combination of problem solving and expression.">
-      <p>Of function and form, of logic and feeling. I believe solutions for people are built through empathy and understanding of their needs and contexts. I enjoy this journey of discovery and collaboration that helps create these solutions, ultimately trying to make someone's life simpler, easier and more delightful. I'm learning from it both professionally and personally.</p>
+      <p>Of function and form, of logic and of feeling. I believe solutions for people are built through empathy and understanding of their needs and contexts. I enjoy this journey of discovery and collaboration that helps create these solutions, ultimately trying to make someone's life simpler, easier and more delightful. I'm learning from it both professionally and personally.</p>
       <p>Thanks for visiting! <span role="img" class="big" aria-label="cheers">🍻</span> </p>
     </Intro>
 
@@ -99,7 +100,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    noldor: file(relativePath: { eq: "assets/images/noldor_cover.jpg" }) {
+    noldor: file(relativePath: { eq: "assets/images/noldor_cover.png" }) {
         childImageSharp {
             fluid(maxWidth: 1226) {
             ...GatsbyImageSharpFluid

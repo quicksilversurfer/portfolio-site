@@ -1,5 +1,7 @@
 import React from 'react'
 
+import "../styles/styles.scss"
+
 import Frame from '../components/frame'
 import Intro from '../components/intro'
 import Content from '../components/content'
@@ -8,12 +10,14 @@ import PostUnit from '../components/postUnit'
 import ImageCont from '../components/ImageCont'
 import PostShowcase from '../components/postShowcase'
 import ProjectCard from '../components/projectCard'
+import Header from '../components/header'
 
 import { graphql } from "gatsby"
 
 const FractalInk = (props) => (
 
 <Frame>
+  <Header back></Header>
   <Intro 
   title="eezyrent" 
   description="A platform for renting and buying spaces, that have been recommended or upvoted by a person's network of friends."
@@ -45,16 +49,16 @@ const FractalInk = (props) => (
 
   <PostShowcase>
     <ProjectCard
-      link="/shui/"
-      projectCover={props.data.shui.childImageSharp.fluid}
-      projectTitle="Shui"
-      projectDesc="Developing design systems for increased internal productivity and user interface consistency."
+      link="/concept-nation/"
+      projectCover={props.data.conceptnation.childImageSharp.fluid}
+      projectTitle="Concept Nation"
+      projectDesc="UI design and front end development for a e-commerce / creative collaboration startup in India."
     ></ProjectCard>      
     <ProjectCard
       link="/ultrasound/"
       projectCover={props.data.ultrasound.childImageSharp.fluid}
       projectTitle="Ultrasound"
-      projectDesc="Developing design systems for increased internal productivity and user interface consistency."
+      projectDesc="End to end design execution for a complex medical device."
     ></ProjectCard>
   </PostShowcase>
 
@@ -83,7 +87,7 @@ query  {
         }
       }
     }
-  shui: file(relativePath: { eq: "assets/images/shui-cover.png" }) {
+  conceptnation: file(relativePath: { eq: "assets/images/conceptnation_cover.png" })  {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid

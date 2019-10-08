@@ -1,5 +1,7 @@
 import React from 'react'
 
+import "../styles/styles.scss"
+
 import Frame from '../components/frame'
 import Intro from '../components/intro'
 import Content from '../components/content'
@@ -9,12 +11,14 @@ import Blockquote from '../components/blockquote'
 import ImageCont from '../components/ImageCont'
 import PostShowcase from '../components/postShowcase'
 import ProjectCard from '../components/projectCard'
+import Header from '../components/header'
 
 import { graphql } from "gatsby"
 
 const Noldor = (props) => (
 
 <Frame>
+  <Header back></Header>
   <Intro 
   title="Draw Me A Story" 
   description="An interactive storytelling experience for children combining activity books with an aspect of storytelling."
@@ -29,8 +33,8 @@ const Noldor = (props) => (
   ></PostInfo>
 
   <PostUnit title="Background">
-    <p>Love Therapy is a fashion brand started by Elio Fiorucci, a renowed fashion designer and founder of the Fiorucci fashion label. Kobalt Entertainment, our client, had acquired the rights to one of their most iconic characters, a gnome.</p>
-    <p>We had to create, design and deliver these micro-experiences to Kobalt Entertainment, for the commercial exploitation of intellectual property rights for Love Therapy.</p>
+    <p><a href="https://www.lovetherapy.it/en-love-therapy" target="_blank" rel="noopener noreferrer">Love Therapy</a> is a fashion brand started by Elio Fiorucci, a renowed fashion designer and founder of the Fiorucci fashion label. Kobalt Entertainment, our client, had acquired the rights to one of their most iconic characters, a gnome.</p>
+    <p>We had to create, design and deliver innovative micro-experiences to Kobalt Entertainment, for the commercial use of the intellectual property rights from Love Therapy.</p>
   </PostUnit>
 
   <Blockquote>What could be some possible brand extensions and their connected spin-off micro-experiences using the Love Therapy brand?</Blockquote>
@@ -55,8 +59,8 @@ const Noldor = (props) => (
       <li>Personal Health</li>
       <li>Social + Communication</li>
     </ol>
-    <p>We researched the products and the upcoming technologies and startups in these areas and tried to identify their potential and shortcomings. For each sector chosen we came up with quick ideas iduring brainstorm sessions.</p>
-    <p>We narrowed down our ideas and decided to focus in the direction of Education and Communication. We believed that these domains had a lot of opportunity that Kobalt Entertainment could leverage to their benefit.</p>
+    <p>We researched the products and upcoming technologies and startups in these areas and tried to identify their potentials and shortcomings. For each sector chosen we came up with quick ideas during brainstorm sessions.</p>
+    <p>We narrowed down our ideas and decided to focus in the direction of Education and Communication as we felt that this domain had opportunities that Kobalt Entertainment could leverage to their benefit.</p>
   </PostUnit>
 
   <Content>
@@ -67,13 +71,13 @@ const Noldor = (props) => (
   </Content>
  
   <PostUnit title="Converging">
-    <p>After the exploration on domains we decided that we would be focusing on Education as our domain of choice and started with more concentrated research in that area.</p>
+    <p>After our exploration into various domains we decided that we would focus on Education and start with more concentrated research in that area.</p>
   </PostUnit>
 
   <Blockquote>Our aim was to make a digitally connected object which would help parents in educating and parenting children.</Blockquote>
 
   <PostUnit>
-    <p>We tried to identify some day-to-day activities that children engage in, which our solution could leverage as a basis for education or to support better parenting.</p>
+    <p>We identified some day-to-day activities that children engage in, which our solution could leverage as a basis for education or to support better parenting.</p>
   </PostUnit>
 
   <Content>
@@ -81,8 +85,8 @@ const Noldor = (props) => (
   </Content>
 
   <PostUnit>
-    <p>Some of the ideas we pursued was an experimentation kit for children, a digital toy similar to Tamagotchi and other digitally connected experiences. We dropped most of these realizing the business limitations required to develop these ideas, and also considering how they would fit into the Kobalt Entertainment portfolio.</p>
-    <p>But as we looked into the research done in the education sector we came across some interesting findings.</p>
+    <p>Some of the ideas we pursued were an experimentation kit for children, a digital toy similar to Tamagotchis and other digitally connected experiences. We dropped most of these realizing the business limitations required to develop these ideas, and also considering how they might fit into the Kobalt Entertainment portfolio.</p>
+    <p>But as we dived deep into the research in the education sector we came across some interesting findings.</p>
   </PostUnit>
 
   <Content>
@@ -100,11 +104,11 @@ const Noldor = (props) => (
   </Content>
 
   <PostUnit>
-    <p>Our excursions into bookstores also gave us an opportunity to analyze some of the competitors in the childrens section and the different types of books that are sold. Browsing online marketplaces like the Amazon, iOS and, Android we took note of the top sellers in the educational app categories and tried to identify their biggest selling points.</p>
+    <p>Our excursions into bookstores gave us an opportunity to analyze some of the competitors in the childrens section and the different types of books that were sold. Browsing online marketplaces like the Amazon, iOS and, Android app stores, we took note of the top sellers in the educational app categories and tried to identify their biggest selling points.</p>
   </PostUnit>
 
   <Blockquote>
-    Looking again at the research and the strengths of our client, building an interactive book for children with a digital counterpart seemed like a good idea.
+    Based on the research and the strengths of our client, we came up with the idea of building an interactive book for children with a digital counterpart.
   </Blockquote>
 
   <Content>
@@ -126,14 +130,14 @@ const Noldor = (props) => (
   </PostUnit>
 
   <PostUnit title="Design Artifacts">
-    <p>The experience is composed of two main parts - the completion of the activity book and the storytelling experience available on mobiles and tablets.</p> 
+    <p>The experience is composed of two main parts - the completion of the activity book and the storytelling experience available on mobile and tablets.</p> 
     <p>We envisioned the activity book experience to be an individual experience for the child, which would foster learning, focus and provide developmental benefits like hand eye coordintation. Children would be motivated by the fact that the effort they make in completing the activity book will be rewarded later with a storytelling experience.</p>
     <p>The storytelling experience could be a shared experience with the parent and child, where they would scan in the pages from the activity book to progress the narrative. For example, if the gnome is stuck in a labyrinth, the child would have to solve the maze which would allow the gnome to move on with the story. Similarly if the child colors a scene someway, the story could incorporate the color scheme into the story.</p>
     <p>We also thought of some interesting educational themes and gnome characters to develop stories.</p>
   </PostUnit>
 
   <Content>
-    <ImageCont size="9" src={props.data.stories.childImageSharp.fluid} caption="Different stories for educating children about environemnts and behaviors"></ImageCont>
+    <ImageCont size="9" src={props.data.stories.childImageSharp.fluid} caption="Different stories for educating children about environemnts and behaviors. Illustrations sourced under Creative Commons (CC) license."></ImageCont>
   </Content>
 
   <PostUnit>
@@ -145,24 +149,24 @@ const Noldor = (props) => (
   </PostUnit>
 
   <Content>
-    <p class="span-6">When a user signs up for Map.it, the application integrates with existing social media accounts and automatically creates a wish list. The user may categorize and rank these items based on importance, or add new items.</p>
+    <p class="span-6">Free content distributed on social networking platforms could engage parents in trying out the 'Draw Me a Story' series.</p>
     <ImageCont size="6" src={props.data.story1.childImageSharp.fluid} border="true"></ImageCont>
   </Content>
 
   <Content>
     <ImageCont size="6" src={props.data.story2.childImageSharp.fluid} border="true"></ImageCont>
-    <p class="span-6">When a user signs up for Map.it, the application integrates with existing social media accounts and automatically creates a wish list. The user may categorize and rank these items based on importance, or add new items.</p>
+    <p class="span-6">Simple activities, like the connect the dots could engage children and prompt parents to download the 'Draw Me a Story' app on their tablets.</p>
   </Content>
 
   <Content>
-    <p class="span-6">When a user signs up for Map.it, the application integrates with existing social media accounts and automatically creates a wish list. The user may categorize and rank these items based on importance, or add new items.</p>
+    <p class="span-6">Availability and advertising through the app, could provide easy access for parents to get more free or paid content.</p>
     <ImageCont size="6" src={props.data.story3.childImageSharp.fluid} border="true"></ImageCont>
   </Content>
 
   <Content>
     <p class="span-12">And made a short video to introduce the experience to our clients.</p>
-    <iframe src="https://player.vimeo.com/video/101002068" width="640" height="362" frameborder="0" title="Draw Me a Story - Concept Video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <p class="span-12">We also mocked up some of the key screens and interactions while taking into consideration the best practices for developing mobile apps for children.</p>
+    <iframe class="span-12" src="https://player.vimeo.com/video/101002068" width="640" height="362" frameborder="0" title="Draw Me a Story - Concept Video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <p class="span-12">We also mocked up some of the key wireframes and interactions while taking into consideration the best practices for developing mobile apps for children.</p>
   </Content>
 
   <Content>
@@ -182,16 +186,16 @@ const Noldor = (props) => (
 
   <PostShowcase>
     <ProjectCard
-      link="/shui/"
-      projectCover={props.data.shui.childImageSharp.fluid}
-      projectTitle="Shui"
-      projectDesc="Developing design systems for increased internal productivity and user interface consistency."
+      link="/mapit"
+      projectCover={props.data.mapit.childImageSharp.fluid}
+      projectTitle="Map.it"
+      projectDesc="Contextual navigation platform for productivity and exploration."
     ></ProjectCard>      
     <ProjectCard
       link="/ultrasound/"
       projectCover={props.data.ultrasound.childImageSharp.fluid}
       projectTitle="Ultrasound"
-      projectDesc="Developing design systems for increased internal productivity and user interface consistency."
+      projectDesc="End to end design execution for a complex medical device."
     ></ProjectCard>
   </PostShowcase>
 
@@ -353,7 +357,7 @@ query  {
         }
         }
     }
-  shui: file(relativePath: { eq: "assets/images/shui-cover.png" }) {
+  mapit: file(relativePath: { eq: "assets/images/mapit.jpg" })  {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid

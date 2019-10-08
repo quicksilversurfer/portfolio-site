@@ -1,5 +1,7 @@
 import React from 'react'
 
+import "../styles/styles.scss"
+
 import Frame from '../components/frame'
 import Intro from '../components/intro'
 import Content from '../components/content'
@@ -9,12 +11,14 @@ import Blockquote from '../components/blockquote'
 import ImageCont from '../components/ImageCont'
 import PostShowcase from '../components/postShowcase'
 import ProjectCard from '../components/projectCard'
+import Header from '../components/header'
 
 import { graphql } from "gatsby"
 
 const ConceptNation = (props) => (
 
 <Frame>
+  <Header back></Header>
   <Intro 
   title="Concept Nation" 
   description="A social platform for people to discover and buy custom artwork, and for artists to display and sell their artwork online."
@@ -87,17 +91,17 @@ const ConceptNation = (props) => (
 
   <PostShowcase>
     <ProjectCard
+      link="/fractalink/"
+      projectCover={props.data.eezyrent.childImageSharp.fluid}
+      projectTitle="eezyrent"
+      projectDesc="Front end development of an online platform for discovering and renting housing in India."
+    ></ProjectCard>
+    <ProjectCard
       link="/shui/"
       projectCover={props.data.shui.childImageSharp.fluid}
       projectTitle="Shui"
       projectDesc="Developing design systems for increased internal productivity and user interface consistency."
     ></ProjectCard>      
-    <ProjectCard
-      link="/ultrasound/"
-      projectCover={props.data.ultrasound.childImageSharp.fluid}
-      projectTitle="Ultrasound"
-      projectDesc="Developing design systems for increased internal productivity and user interface consistency."
-    ></ProjectCard>
   </PostShowcase>
 
 
@@ -188,7 +192,7 @@ query  {
         }
         }
     }
-  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.png" }) {
+  eezyrent: file(relativePath: { eq: "assets/images/eezyrent_cover.png" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid

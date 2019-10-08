@@ -4,6 +4,8 @@
  *
  */
 
+ @import 'page.variables.scss';
+
 @mixin small {
   @media (max-width: #{$small-width}) {
     @content;

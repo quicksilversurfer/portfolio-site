@@ -1,4 +1,4 @@
-@import "./styles.scss";
+@import 'utilities.mixins';
 
 .wrapper {
   display: grid;
@@ -6,8 +6,7 @@
 }
 
 .title {
-  font-weight: bold;
-  font-style: normal;
+  //
 }
 h3:empty {
   display: none;

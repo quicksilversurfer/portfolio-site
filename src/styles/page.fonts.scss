@@ -14,6 +14,33 @@
 //     url('../assets/fonts/GT-Pressura-Mono-Regular.woff') format('woff');
 // }
 
+
+// @import url('https://fonts.googleapis.com/css?family=Crimson+Pro:400,700&display=swap');
+// html { font-family: 'Crimson Pro', serif; }
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+// Redaction - A typeface inspired by The Redaction by Titus Kaphar and Reginald Dwayne Betts
+@font-face {
+  font-family: 'Redaction';
+  font-weight: bold;
+  font-style: bold;
+
+  src: url('../assets/fonts/Redaction-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Redaction-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Redaction';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../assets/fonts/Redaction-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Redaction-Regular.woff') format('woff');
+}
 // @font-face {
 //   font-family: 'Quincy-CF';
 //   font-weight: 800;

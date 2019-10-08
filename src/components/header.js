@@ -1,32 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+import headerStyles from '../styles/header.module.scss'
+
+const Header = ({ back, about }) => (
+  <div className={`${headerStyles.header} ${about ? 'aboutPage' : ''}`}>
+  <Link to='/' className={`${headerStyles.backWrapper} ${back ? headerStyles.back : ''}`}>
+    <div className={headerStyles.arrow}></div>
+  </Link>
+  <Link to={`${about ? '/' : '/about/'}`} className={`${headerStyles.aboutWrapper} ${about ? 'about' : ''} `}>
+  </Link>
   </div>
 )
 

@@ -1,4 +1,4 @@
-@import "./styles.scss";
+@import 'utilities.mixins';
 
 .wrapper {
   display: grid;
@@ -14,20 +14,22 @@
   @include small {
     grid-template-columns: 1fr;
     width: 70vw;
+    grid-gap: 2rem;
+    padding: 3rem 0;
   }
 }
 
 .infoWrapper{
   grid-column: auto/span 1;
   h5 {
-    font-size: 1.1rem;
-    font-family: var(--sans-serif);
-    font-weight: 500;
-    margin-bottom: .667rem;
+    margin-bottom: .75rem;
     text-transform: uppercase;
   }
   p {
     // font-size: 1.33rem;
     font-weight: 500;
+    @include small {
+      font-size: 1.25rem;
+    }
   }
 }

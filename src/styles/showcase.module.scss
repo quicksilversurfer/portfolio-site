@@ -1,5 +1,4 @@
-@import "./styles.scss";
-
+@import 'utilities.mixins';
 
 .intro {
   padding: 4rem 0;
@@ -12,5 +11,6 @@
 
   @include small {
     grid-column: auto/span 12;
+    padding: 2rem 0;
   }
 }
