@@ -2,16 +2,20 @@ import React from 'react'
 import Frame from '../components/frame'
 import ImageCont from '../components/ImageCont'
 import Header from '../components/header'
-
 import AboutStyles from "../styles/about.module.scss"
+import SEO from '../components/seo'
 
 import { graphql } from "gatsby"
 
 
-const About = (props) => (
+const Profile = (props) => (
 
 
 <Frame about>
+  <SEO
+    title="Profile"
+    description="Profile, Work Experience and Education history of Prateek Solanki"
+  ></SEO>
   <Header about></Header>
   <div className={`grid-wrapper ${AboutStyles.aboutWrapper}`}>
     <div className={`span-12 ${AboutStyles.name}`}>
@@ -34,8 +38,8 @@ const About = (props) => (
         <p>
           Design is the language through which I express the change I want to see in the world, and contribute to teams and people attempting to do the same.
         </p>
-        <a href="http://google.com" target="_blank" rel="noopener noreferrer" >hello@prateeksolanki.com ↗</a>
-        <a href="http://google.com" target="_blank" rel="noopener noreferrer" >Résumé↓</a>
+        <a href="mailto:hello@prateeksolanki.com" target="_blank" rel="noopener noreferrer" >hello@prateeksolanki.com ↗</a>
+        <a href="https://drive.google.com/file/d/1niAp1oRtI1iuCWAOmCkeyaesh78KRocv/view?usp=sharing" target="_blank" rel="noopener noreferrer" >Résumé↓</a>
       </div>
     </div>
 
@@ -52,7 +56,7 @@ const About = (props) => (
           My work at Siemens has been the most fulfilling part of my career, where I've executed the user-centered design process end to end for the design of medical devices and worked alongside some of the most thoughtful and kindest designers. Executing from within the trenches has helped me develop an understanding of what is needed at the each step of the process to deliver on great outcomes.
         </p>
         <p>
-          The cross-discplinary experience in research, interaction design, visual design and development that I've gained in this role has certainly made me a better designer, but also made me aware of my gaps and continues to challenge me to evaluate and refine my process. 
+          The cross-discplinary experience in research, interaction design, visual design and development that I've gained in this role has certainly made me a better designer, but also made me aware of my gaps and continues to challenge me to evaluate and refine my skills and process. 
         </p>
       </div>
 
@@ -70,7 +74,7 @@ const About = (props) => (
       <div className={`span-6 ${AboutStyles.sectionHeading}`}>
         <h4>Concept Nation</h4>
         <h4>UX Designer, Front End Developer</h4>
-        <h5>September 2014 - December 2014</h5>
+        <h5>September 2014 - January 2015</h5>
       </div>
       <div className={`span-6 ${AboutStyles.sectionDesc}`}>
         <p>
@@ -123,7 +127,7 @@ const About = (props) => (
       <div className={`span-6 ${AboutStyles.sectionHeading}`}>
         <h4>Manipal Institute of Technology</h4>
         <h4>B.E. in Mechatronics</h4>
-        <h5>June 2006 - May 2010</h5>
+        <h5>June 2006 - July 2010</h5>
       </div>
       <div className={`span-6 ${AboutStyles.sectionDesc}`}>
         <p>
@@ -141,7 +145,7 @@ const About = (props) => (
 </Frame>
 )
 
-export default About
+export default Profile
 
 export const pageQuery = graphql`
 query  {

@@ -14,10 +14,15 @@ import ProjectCard from '../components/projectCard'
 import Header from '../components/header'
 
 import { graphql } from "gatsby"
+import SEO from '../components/seo'
 
 const Noldor = (props) => (
 
 <Frame>
+  <SEO
+    title="Draw Me A Story"
+    description="An interactive storytelling experience for children combining activity books with an aspect of storytelling."
+  ></SEO>
   <Header back></Header>
   <Intro 
   title="Draw Me A Story" 

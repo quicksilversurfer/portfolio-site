@@ -6,13 +6,17 @@ import Frame from '../components/frame'
 import Intro from '../components/intro'
 import Showcase from '../components/showcase'
 import ProjectCard from '../components/projectCard'
-// import MainNav from '../components/mainNav'
 import Header from '../components/header'
+import SEO from '../components/seo'
 
 import { graphql } from "gatsby"
 
 const IndexPage = (props) => (
   <Frame>
+    <SEO
+      title="Portfolio"
+      description="Interaction Design portfolio of Prateek Solanki. A UX Designer at Siemens Healthineers."
+    ></SEO>
     <Header></Header>
     <Intro
       title="Hello, I'm Prateek" 

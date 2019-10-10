@@ -14,10 +14,15 @@ import ProjectCard from '../components/projectCard'
 import Header from '../components/header'
 
 import { graphql } from "gatsby"
+import SEO from '../components/seo'
 
 const ConceptNation = (props) => (
 
 <Frame>
+  <SEO
+    title="Concept Nation"
+    description="A social platform for people to discover and buy custom artwork, and for artists to display and sell their artwork online."
+  ></SEO>
   <Header back></Header>
   <Intro 
   title="Concept Nation" 
@@ -40,8 +45,8 @@ const ConceptNation = (props) => (
 
   <Blockquote>The goal was to further develop the MVP, setting up a foundation for further explorations and understand where the real value of the platform lay.</Blockquote>
 
-  <PostUnit title="Diverging">
-    <p>We started by identifying the strengths of both Kobalt and Love Therapy in order to plot out opportunities that can be explored by their collaboration.</p>
+  <PostUnit title="Research">
+    <p>During our intitial discussions, I talked to Vibhu about existing traffic on the platform, to understand what users were doing and get insights into how we might update the design.</p>
   </PostUnit>
 
   <Content>
@@ -65,14 +70,14 @@ const ConceptNation = (props) => (
 
   <PostUnit>
     <p>I also did an assessment of the current design to become familiar with the UI and information architecture to identify areas where we could quickly improve upon. I identified the following areas which needed to be tackled -</p>
-    <p><b>Create navigational structures</b>that help the user identify content (concept vs. artwork) and understand where they are in the platform.</p>
+    <p><b>Create navigational structures</b> that help the user identify content (concept vs. artwork) and understand where they are in the platform.</p>
     <p><b>Create a consistent and scalable visual language</b> by harmonizing the layout, the use of color, typography.</p>
-    <p>Lastly, <b>allow for serendipitous discovery</b>by showcasing relevant content at the right places in a user's journey.</p>
+    <p>Lastly, <b>allow for serendipitous discovery</b> by showcasing relevant content at the right places in a user's journey.</p>
   </PostUnit>
 
   <PostUnit title="Building">
     <p>Understanding that we wanted to communicate the platforms mission to the audience, I developed some wireframes to communicate my approach to Vibhu and soon after started building. We performed some quick iterations on the visual design and had something that we were satisfied with quite early.</p>
-    <p>I built the application using Bootstrap framework, as it was the most updated and modern web framework at the time. We managed to get a lot of work completed, part of which is shown below.</p>
+    <p>I built the application using Bootstrap framework, as it was the most updated and modern web framework at the time. We managed to get a lot of work completed in a short time, part of which is shown below.</p>
   </PostUnit>
 
   <Content>
@@ -85,8 +90,15 @@ const ConceptNation = (props) => (
   </Content>
 
   <PostUnit title="Conclusion" border="true">
-    <p>Draw Me a Story is an application that aims at meaningfully integrating digital products into a child's playtime activities. Combining traditional paper based activities that have a proven impact on focus and creativity with the magic of digital storytelling, Draw Me a Story makes for an engaging and educative experience for children.</p>
-    <p>The shared experience of a parent and a child reading through the interactive story together also fosters closer relationships, builds family traditions and helps pass along values and beliefs.</p>
+    <p>
+      Concept Nation was my first big design project after school, and it was a great experience applying what I had learned at school into real life projects. With the project, I realized how important it is to structure the content and build an information architecture that reflects what users mental models are and how important it is to convey information in a way that they can relate to. 
+    </p>
+    <p>
+      The other important part of the project was the development, and from the intitial stages of the development, I wanted to build a platform that would be easy to hand off and build on top off as the project progressed. I created and reused elements of the main data objects like 'Concepts', 'Artists' and 'Artwork' across the platform to build consistency and familiarity in the design and to make the code more effecient and easy to understand.
+    </p>
+    <p>
+      Most of my time was dedicated to refreshing the visual design and building the new front-end, both Vibhu and I believed that this was a quick win for the startup to make a platform that stands out from other companies in the market, in providing a unique value proposition in an appealing and welcoming package.
+    </p>
   </PostUnit>
 
   <PostShowcase>

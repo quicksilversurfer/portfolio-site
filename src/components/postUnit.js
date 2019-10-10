@@ -5,10 +5,10 @@ import PostUnitStyles from '../styles/postUnit.module.scss'
 const PostUnit = ({title, border, children}) => (
 
   <Content border={border}>
-    <div className={PostUnitStyles.wrapper}>
+    <section className={PostUnitStyles.wrapper}>
       <h3 className={PostUnitStyles.title}>{title}</h3>
       {children}
-    </div>
+    </section>
   </Content>
 
 )

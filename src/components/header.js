@@ -8,7 +8,8 @@ const Header = ({ back, about }) => (
   <Link to='/' className={`${headerStyles.backWrapper} ${back ? headerStyles.back : ''}`}>
     <div className={headerStyles.arrow}></div>
   </Link>
-  <Link to={`${about ? '/' : '/about/'}`} className={`${headerStyles.aboutWrapper} ${about ? 'about' : ''} `}>
+  <Link to={`${about ? '/' : '/profile/'}`} className={`${headerStyles.aboutWrapper} ${about ? 'about' : ''} `}>
+    <span className={headerStyles.line}></span>
   </Link>
   </div>
 )

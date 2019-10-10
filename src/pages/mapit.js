@@ -14,10 +14,15 @@ import ProjectCard from '../components/projectCard'
 import Header from '../components/header'
 
 import { graphql } from "gatsby"
+import SEO from '../components/seo'
 
 const MapIt = (props) => (
 
 <Frame>
+  <SEO
+    title="Map.it"
+    description="A contextual navigation platform that helps you get things done and discover new experiences in your environment."
+  ></SEO>
   <Header back></Header>
   <Intro 
   title="Map.it" 
@@ -123,17 +128,17 @@ const MapIt = (props) => (
 
   <Content>
     <ImageCont size="6" src={props.data.screen1.childImageSharp.fluid}></ImageCont>
-    <ImageCont size="6" src={props.data.screen2.childImageSharp.fluid}></ImageCont>
-  </Content>
-
-  <Content>
     <ImageCont size="6" src={props.data.screen3.childImageSharp.fluid}></ImageCont>
-    <ImageCont size="6" src={props.data.screen4.childImageSharp.fluid}></ImageCont>
   </Content>
 
   <Content>
+    <ImageCont size="6" src={props.data.screen4.childImageSharp.fluid}></ImageCont>
     <ImageCont size="6" src={props.data.screen5.childImageSharp.fluid}></ImageCont>
+  </Content>
+
+  <Content>
     <ImageCont size="6" src={props.data.screen6.childImageSharp.fluid}></ImageCont>
+    <ImageCont size="6" src={props.data.screen7.childImageSharp.fluid}></ImageCont>
   </Content>
 
   <PostUnit title="Conclusion" border="true">
@@ -300,7 +305,7 @@ query  {
         }
         }
     }
-  noldor: file(relativePath: { eq: "assets/images/noldor_cover.jpg" }) {
+  noldor: file(relativePath: { eq: "assets/images/noldor_cover.png" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid
@@ -312,7 +317,7 @@ query  {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid
         }
-        }
+      }
     }
 }
 `

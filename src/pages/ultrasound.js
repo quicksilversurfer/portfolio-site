@@ -8,12 +8,17 @@ import Blockquote from '../components/blockquote'
 import PostShowcase from '../components/postShowcase'
 import ProjectCard from '../components/projectCard'
 import Header from '../components/header'
+import SEO from '../components/seo'
 
 import { graphql } from "gatsby"
 
 const Ultrasound = (props) => (
 
 <Frame>
+  <SEO
+    title="Ultrasound"
+    description="End to end design execution for a complex medical device."
+  ></SEO>
   <Header back></Header>
   <Intro 
   title="Ultrasound" 
@@ -33,7 +38,7 @@ const Ultrasound = (props) => (
       As part of the User Experience Design team in Princeton, I collaborated with the Ultrasound business unit to reimagine the next generation of their premium systems which has now been released as the <a href="https://www.siemens-healthineers.com/en-us/ultrasound/new-era-ultrasound/acuson-sequoia" target="_blank" rel="noopener noreferrer">ACUSON Sequoia</a>.
     </p>
     <p>
-      In this long running effort, I worked with designers on our team in Princeton, the Human Factors team, engineers and product managers at Ultrasound to bring a competitive and compelling product to market. The experience of working through the entire design process for such a complex medical device by being deeply integrated with the product team was an immensely enriching experience, and it revealed the underlying complexity of what it takes to bring a medical device to market.
+      In this long running effort, I worked with designers on our team in Princeton, the Human Factors team, engineers and product managers at Ultrasound to bring a competitive and compelling product to market. The experience of working through the entire design process for such a complex medical device, by being deeply integrated with the product team, was an immensely enriching experience. It revealed the underlying complexity of what it takes to bring a medical device to market.
     </p>
   </PostUnit>
 
@@ -95,7 +100,7 @@ query  {
         }
         }
     }
-  noldor: file(relativePath: { eq: "assets/images/noldor_cover.jpg" }) {
+  noldor: file(relativePath: { eq: "assets/images/noldor_cover.png" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid
