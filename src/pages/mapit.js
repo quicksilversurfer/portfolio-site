@@ -18,7 +18,7 @@ import SEO from '../components/seo'
 
 const MapIt = (props) => (
 
-<Frame>
+<Frame sometimeago>
   <SEO
     title="Map.it"
     description="A contextual navigation platform that helps you get things done and discover new experiences in your environment."

@@ -85,28 +85,19 @@ h6 {
 
   letter-spacing: 1px;
   text-transform: uppercase;
-
-//  color: var(--meta-color);
-
-//  @include small {
-//    margin: var(--unit) 0 var(--unit-quarter);
-//  }
-
-//  &:after {
-//    width: var(--unit);
-//    height: 1px;
-//    margin-left: 0.85rem;
-
-//    background-color: var(--border-color);
-//    // content: '';
-//  }
 }
 
-//  hgroup {
-//    h1 {
-//      margin-top: 0.2em;
-//    }
-//  }
+.sometimeago {
+  h1, h2, h3, p, blockquote {
+    font-family: var(--serif-sometimeago);
+  }
+}
+
+.awhileago {
+  h1, h2, h3, p, blockquote {
+    font-family: var(--serif-awhileago);
+  }
+}
 
 a {
   text-decoration: none;

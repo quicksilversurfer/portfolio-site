@@ -18,7 +18,7 @@ import SEO from '../components/seo'
 
 const Noldor = (props) => (
 
-<Frame>
+<Frame sometimeago>
   <SEO
     title="Draw Me A Story"
     description="An interactive storytelling experience for children combining activity books with an aspect of storytelling."

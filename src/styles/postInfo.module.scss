@@ -26,7 +26,7 @@
     text-transform: uppercase;
   }
   p {
-    // font-size: 1.33rem;
+    font-family: var(--sans-serif) !important;
     font-weight: 400;
     @include small {
       font-size: 1.25rem;

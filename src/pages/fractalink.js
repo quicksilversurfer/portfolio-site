@@ -17,7 +17,7 @@ import SEO from '../components/seo'
 
 const FractalInk = (props) => (
 
-<Frame>
+<Frame awhileago>
   <SEO
     title="eezyrent"
     description="A platform for renting and buying spaces, that have been recommended or upvoted by a person's network of friends."

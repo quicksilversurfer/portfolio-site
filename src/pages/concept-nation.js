@@ -18,7 +18,7 @@ import SEO from '../components/seo'
 
 const ConceptNation = (props) => (
 
-<Frame>
+<Frame awhileago>
   <SEO
     title="Concept Nation"
     description="A social platform for people to discover and buy custom artwork, and for artists to display and sell their artwork online."

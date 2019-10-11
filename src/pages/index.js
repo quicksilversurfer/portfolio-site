@@ -40,7 +40,7 @@ const IndexPage = (props) => (
       ></ProjectCard>
     </Showcase>
 
-    <Showcase intro="Domus Academy was my first formal introduction to design thinking, where I had the chance to create innovative and pragmatic solutions to broad and challenging design briefs." border>
+    <Showcase sometimeago intro="Domus Academy was my first formal introduction to design thinking, where I had the chance to create innovative and pragmatic solutions to broad and challenging design briefs." border>
       <ProjectCard
         link="/draw-me-a-story/"
         projectCover={props.data.noldor.childImageSharp.fluid}
@@ -55,7 +55,7 @@ const IndexPage = (props) => (
       ></ProjectCard>
     </Showcase>
 
-    <Showcase intro="Web development helped me get into design, and it has been an invaluable skill for my design process, giving me perspective and helping me appreciate the technical details of things." border>
+    <Showcase awhileago intro="Web development helped me get into design, and it has been an invaluable skill for my design process, giving me perspective and helping me appreciate the technical details of things." border>
       <ProjectCard
         link="/concept-nation/"
         projectCover={props.data.conceptnation.childImageSharp.fluid}

@@ -41,6 +41,57 @@ html { font-family: 'Inter', sans-serif; }
   src: url('../assets/fonts/Redaction-Regular.woff2') format('woff2'),
     url('../assets/fonts/Redaction-Regular.woff') format('woff');
 }
+//Redaction20
+@font-face {
+  font-family: 'Redaction20';
+  font-weight: bold;
+  font-style: bold;
+
+  src: url('../assets/fonts/Redaction20-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Redaction20-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Redaction20';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../assets/fonts/Redaction20-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Redaction20-Regular.woff') format('woff');
+}
+//Redaction35
+@font-face {
+  font-family: 'Redaction35';
+  font-weight: bold;
+  font-style: bold;
+
+  src: url('../assets/fonts/Redaction35-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Redaction35-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Redaction35';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../assets/fonts/Redaction35-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Redaction35-Regular.woff') format('woff');
+}
+//Redaction50
+@font-face {
+  font-family: 'Redaction50';
+  font-weight: bold;
+  font-style: bold;
+
+  src: url('../assets/fonts/Redaction50-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Redaction50-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Redaction50';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../assets/fonts/Redaction50-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Redaction50-Regular.woff') format('woff');
+}
 // @font-face {
 //   font-family: 'Quincy-CF';
 //   font-weight: 800;
