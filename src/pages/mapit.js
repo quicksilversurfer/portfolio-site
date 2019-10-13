@@ -8,7 +8,7 @@ import Content from '../components/content'
 import PostInfo from '../components/postInfo'
 import PostUnit from '../components/postUnit'
 import Blockquote from '../components/blockquote'
-import ImageCont from '../components/ImageCont'
+import ImageCont from '../components/imageCont'
 import PostShowcase from '../components/postShowcase'
 import ProjectCard from '../components/projectCard'
 import Header from '../components/header'
@@ -32,7 +32,7 @@ const MapIt = (props) => (
   ></Intro>
 
   <PostInfo
-    context="Domus Academy / Feb. 2014 / 4 Weeks / Experience Design"
+    context="Domus Academy / Oct. 2013 / 4 Weeks / Experience Design"
     collaborators="Rana Mansour, Tiago Boaventura"
     contribution="Research, Interaction Design, UI Design"
   ></PostInfo>

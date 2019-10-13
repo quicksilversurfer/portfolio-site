@@ -1,6 +1,6 @@
 import React from 'react'
 import Frame from '../components/frame'
-import ImageCont from '../components/ImageCont'
+import ImageCont from '../components/imageCont'
 import Header from '../components/header'
 import AboutStyles from "../styles/about.module.scss"
 import SEO from '../components/seo'

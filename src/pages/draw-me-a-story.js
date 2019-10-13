@@ -8,7 +8,7 @@ import Content from '../components/content'
 import PostInfo from '../components/postInfo'
 import PostUnit from '../components/postUnit'
 import Blockquote from '../components/blockquote'
-import ImageCont from '../components/ImageCont'
+import ImageCont from '../components/imageCont'
 import PostShowcase from '../components/postShowcase'
 import ProjectCard from '../components/projectCard'
 import Header from '../components/header'
@@ -32,7 +32,7 @@ const Noldor = (props) => (
   ></Intro>
 
   <PostInfo
-    context="Doums Academy / Feb. 2014 / 4 Weeks / Interaction Design Strategy and Business"
+    context="Doums Academy / Jan. 2014 / 4 Weeks / Interaction Design Strategy and Business"
     collaborators="Interaction Design - Eray Alan, Me / Product Design - Dong Jin Ahn, Chih-Lung Yeh, Maissa Naim, Katayoun Pisheh"
     contribution="Research, Interaction Design, UI Design"
   ></PostInfo>
