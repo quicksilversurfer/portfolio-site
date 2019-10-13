@@ -1,6 +1,6 @@
 html {
   background-color: var(--background-color);
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 body {
@@ -123,7 +123,7 @@ iframe {
 
 //About Page Styles
 .aboutPage {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
   color: #f6f6f6;
   font-family: var(--sans-serif);
 }

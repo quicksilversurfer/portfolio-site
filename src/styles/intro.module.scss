@@ -19,6 +19,7 @@ div[cover] {
   margin: 0;
   height: 60vh;
   padding-top: 30%;
+  font-family: var(--serif);
 
   @include small {
     display: table-cell;
