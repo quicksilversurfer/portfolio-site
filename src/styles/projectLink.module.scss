@@ -1,0 +1,54 @@
+@import 'utilities.mixins';
+
+.link {
+  grid-column: auto / span 9;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+
+.cover {
+  position: relative;
+  overflow: hidden;
+  width: 12rem;
+  height: 8rem;
+  float: left;
+  margin-right: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  @include small {
+    height: fit-content;
+  }
+}
+.link:hover .cover {
+  transform: scale3d(1.05,1.05,1);
+}
+.link:active .cover{
+  transform: scale3d(.98,.98,1);
+}
+
+.title {
+  font-family: var(--sans-serif);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0 0 .5rem 0;
+
+  @include small {
+    margin: 1.75rem 0 .5rem 0;
+  }
+}
+
+.desc {
+  font-family: var(--sans-serif) !important;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}

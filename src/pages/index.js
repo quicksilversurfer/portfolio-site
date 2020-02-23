@@ -6,6 +6,7 @@ import Frame from '../components/frame'
 import Intro from '../components/intro'
 import Showcase from '../components/showcase'
 import ProjectCard from '../components/projectCard'
+import ProjectLink from '../components/projectLink'
 import Header from '../components/header'
 import SEO from '../components/seo'
 
@@ -40,7 +41,7 @@ const IndexPage = (props) => (
       ></ProjectCard>
     </Showcase>
 
-    <Showcase sometimeago intro="Domus Academy was my first formal introduction to design thinking, where I had the chance to create innovative and pragmatic solutions to broad and challenging design briefs." border>
+    <Showcase intro="Domus Academy was my first formal introduction to design thinking, where I had the chance to create innovative and pragmatic solutions to broad and challenging design briefs." border>
       <ProjectCard
         link="/draw-me-a-story/"
         projectCover={props.data.noldor.childImageSharp.fluid}
@@ -55,7 +56,7 @@ const IndexPage = (props) => (
       ></ProjectCard>
     </Showcase>
 
-    <Showcase awhileago intro="Web development helped me get into design, and it has been an invaluable skill for my design process, giving me perspective and helping me appreciate the technical details of things." border>
+    <Showcase intro="Web development helped me get into design, and it has been an invaluable skill for my design process, giving me perspective and helping me appreciate the technical details of things." border>
       <ProjectCard
         link="/concept-nation/"
         projectCover={props.data.conceptnation.childImageSharp.fluid}
@@ -68,6 +69,21 @@ const IndexPage = (props) => (
         projectTitle="eezyrent"
         projectDesc="Front end development of an online platform for discovering and renting housing in India."
       ></ProjectCard>
+    </Showcase>
+
+    <Showcase intro="Making and creating is an integral step to understanding new domains and ideas. Here are some things I've done outside of work." border>
+      <ProjectLink
+        linkCover={props.data.cscw.childImageSharp.fluid}
+        link="https://uxdesign.cc/why-more-ux-designers-should-attend-research-oriented-conferences-76438b2d0e51"
+        projectTitle="Why more UX designers should attend research-oriented conferences"
+        projectDesc="An article recounting my expereinces from CSCW 2019, and what I learned there."
+      ></ProjectLink>
+      <ProjectLink
+        linkCover={props.data.d3people.childImageSharp.fluid}
+        link="https://quicksilversurfer.github.io/1000-people/"
+        projectTitle="1000 People"
+        projectDesc="A d3 network graph visualizing connections between people in a community of practice."
+      ></ProjectLink>
     </Showcase>
 
     <Intro description="Design is a combination of problem solving and expression.">
@@ -119,6 +135,20 @@ export const pageQuery = graphql`
             }
         }
     eezyrent: file(relativePath: { eq: "assets/images/eezyrent_cover.png" }) {
+      childImageSharp {
+          fluid(maxWidth: 1226) {
+          ...GatsbyImageSharpFluid
+          }
+          }
+      }
+    cscw: file(relativePath: { eq: "assets/images/cscw.png" }) {
+      childImageSharp {
+          fluid(maxWidth: 1226) {
+          ...GatsbyImageSharpFluid
+          }
+          }
+      }
+    d3people: file(relativePath: { eq: "assets/images/d3people.png" }) {
       childImageSharp {
           fluid(maxWidth: 1226) {
           ...GatsbyImageSharpFluid
