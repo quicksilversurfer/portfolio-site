@@ -57,7 +57,7 @@ const Shui = (props) => (
       Being part of this project since it's conception, it's been a great growth opportunity for me with respect to thinking about visual design systems at scale, deeper understanding of the organization and how it is structured, and the workflows and use cases of some of our key products and services. 
     </p>
     <p>
-      After the initial release of the project internally, we were validated that this was a step in the right direction when SHUI received the <a href="https://www.red-dot.org/project/shui-siemens-healthineers-user-interface-25965" target="_blank" rel="noopener noreferrer">'Communication Design'</a> award from Red Dot in 2018.
+      After the initial release of the project internally, we were validated that this was a step in the right direction when SHUI received the Communication Design award from Red Dot in 2018.
     </p>
   </PostUnit>
 
