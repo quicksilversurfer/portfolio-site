@@ -28,8 +28,8 @@ const Ultrasound = (props) => (
   ></Intro>
 
   <PostInfo
-    context="Siemens Healthcare / Nov - 2015 to Feb - 2017"
-    collaborators="Siemens Healthcare Design Team"
+    context="Siemens Healthineers / Nov - 2015 to Feb - 2017"
+    collaborators="Siemens Healthineers Design Team"
     contribution="Project Management, User Research, Interaction Design, Visual Design, Usability Testing "
   ></PostInfo>
 

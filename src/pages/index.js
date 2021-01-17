@@ -21,7 +21,7 @@ const IndexPage = (props) => (
     <Header></Header>
     <Intro
       title="Hello, I'm Prateek" 
-      description="I am an Interaction Designer at Siemens Healthcare, where I help design and build medical device interfaces."
+      description="I am an Interaction Designer at Siemens Healthineers, where I help design and build medical device interfaces."
       border="true"
       cover="true"
     ></Intro>
@@ -30,7 +30,7 @@ const IndexPage = (props) => (
       <ProjectCard
         link="/shui/"
         projectCover={props.data.shui.childImageSharp.fluid}
-        projectTitle="Shui"
+        projectTitle="Shui®"
         projectDesc="Developing design systems for user interface consistency and increased internal productivity."
       ></ProjectCard>      
       <ProjectCard
@@ -106,7 +106,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    ultrasound: file(relativePath: { eq: "assets/images/ultrasound.png" }) {
+    ultrasound: file(relativePath: { eq: "assets/images/ultrasound.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1226) {
             ...GatsbyImageSharpFluid

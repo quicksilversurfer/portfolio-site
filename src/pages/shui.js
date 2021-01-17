@@ -16,26 +16,26 @@ const Shui = (props) => (
 
 <Frame>
   <SEO
-    title="SHUI - Siemens Healthineers User Interface"
+    title="Shui® Design System"
     description="Developing design systems for user interface consistency and increased internal productivity."
   ></SEO>
   <Header back></Header>
   <Intro 
-  title="SHUI" 
+  title="Shui" 
   description="Developing design systems for user interface consistency and increased internal productivity."
   cover="true"
   border="true"
   ></Intro>
 
   <PostInfo
-    context="Siemens Healthcare / Nov - 2017 to Present"
-    collaborators="Siemens Healthcare Design Team, IDEO"
+    context="Siemens Healthineers / Nov - 2017 to Present"
+    collaborators="Siemens Healthineers Design Team, IDEO"
     contribution="Interaction Design, Visual Design, Front-End Development"
   ></PostInfo>
 
   <PostUnit title="Summary">
     <p>
-      SHUI - Siemens Healthineers User Interface, is a design system born out of the need to harmonize the interfaces for the vast product portfolio that Siemens Healthineers offers. 
+      Shui® is a design system born out of the need to harmonize the interfaces for the vast product portfolio that Siemens Healthineers offers. 
     </p>
     <p>
       Over time, product interfaces that originally began from the same foundation have become visually and behaviorally different, and in 2017 when the healthcare group of Siemens was spun off as a new company, there was an opportunity to re-align and build a cohesive experience across all it's products. 
@@ -46,7 +46,7 @@ const Shui = (props) => (
   </PostUnit>
 
   <Blockquote>
-    The challenge with SHUI is to create a design system that can span different product classes, support multiple clients from desktop to in-built interfaces on hardware, and be easy to apply for complex and critical work environments. 
+    The challenge with Shui® is to create a design system that can span different product classes, support multiple clients from desktop to in-built interfaces on hardware, and be easy to apply for complex and critical work environments. 
   </Blockquote>
 
   <PostUnit border="true">
@@ -57,7 +57,7 @@ const Shui = (props) => (
       Being part of this project since it's conception, it's been a great growth opportunity for me with respect to thinking about visual design systems at scale, deeper understanding of the organization and how it is structured, and the workflows and use cases of some of our key products and services. 
     </p>
     <p>
-      After the initial release of the project internally, we were validated that this was a step in the right direction when SHUI received the Communication Design award from Red Dot in 2018.
+      After the initial release of the project internally, we were validated that this was a step in the right direction when Shui® received the Communication Design award from <a href="https://www.red-dot.org/project/shui-siemens-healthineers-user-interface-25965" target="_blank" rel="noopener noreferrer">Red Dot Award in 2018</a>, and the <a href="https://www.german-design-award.com/die-gewinner/galerie/detail/23757-shui.html" target="_blank" rel="noopener noreferrer">German Design Award in 2019</a>.
     </p>
   </PostUnit>
 
@@ -101,7 +101,7 @@ query  {
         }
       }
     }
-  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.png" }) {
+  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.jpg" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid

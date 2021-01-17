@@ -369,7 +369,7 @@ query  {
         }
         }
     }
-  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.png" }) {
+  ultrasound: file(relativePath: { eq: "assets/images/ultrasound.jpg" }) {
     childImageSharp {
         fluid(maxWidth: 1226) {
         ...GatsbyImageSharpFluid

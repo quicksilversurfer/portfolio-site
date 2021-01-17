@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Prateek Solanki - Interaction Designer`,
-    description: `Interaction Design portfolio of Prateek Solanki. A User Experience design in Siemens Healthcare based out of Princeton, NJ. `,
+    description: `Interaction Design portfolio of Prateek Solanki. A User Experience design in Siemens Healthineers based out of Princeton, NJ. `,
     author: `Prateek Solanki`,
     siteUrl: `http://prateeksolanki.com`
   },
